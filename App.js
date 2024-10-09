@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet} from 'react-native';
 import styled from 'styled-components/native';
-import { Text } from './components/atoms';
+import { Icon, Text } from './components/atoms';
 const StyledContainer = styled.View`
 background-color: red; 
 flex: 1; 
@@ -17,6 +17,9 @@ export default function App() {
       <Text.Title title="Titre" />
       <Text.SubTitle subTitle="Sous titre" />
       <Text.Paragraph paragraph="Paragraphe" />
+
+      <Icon.Base name="home" iconType="material"/>
+      <Icon.Base name="user" iconType="antdesign"/>
     </StyledContainer>
   );
 }
