@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet} from 'react-native';
 import styled from 'styled-components/native';
+import { Text } from './components/atoms';
 const StyledContainer = styled.View`
 background-color: red; 
 flex: 1; 
@@ -13,8 +14,9 @@ align-items: center;
 export default function App() {
   return (
     <StyledContainer>
-      <Text>Open up App.js to stop working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text.Title title="Titre" />
+      <Text.SubTitle subTitle="Sous titre" />
+      <Text.Paragraph paragraph="Paragraphe" />
     </StyledContainer>
   );
 }
