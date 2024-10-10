@@ -1,15 +1,13 @@
 import StyledTitle from "./StyledTitle";
 import StyledSubTitle from "./StyledSubTitle";
 import StyledParagraph from "./StyledParagraph";
-import StyledSecondaryButton from "./StyledSecondaryButton";
-import StyledPrimaryButton from "./StyledPrimaryButton";
+import StyledButton from "./StyledButton";
 import ToggleContainer from "./StyledToggleButton";
 
 export {
   StyledTitle,
   StyledSubTitle,
   StyledParagraph,
-  StyledPrimaryButton,
-  StyledSecondaryButton,
+  StyledButton,
   ToggleContainer,
 };
