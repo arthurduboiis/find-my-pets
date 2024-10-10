@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { Text } from "react-native";
+import { Native } from "../../nanites";
 
 const StyledSecondaryButton = styled.Pressable`
   border-color: #c7b198;
@@ -17,7 +17,7 @@ const Secondary = ({title, action = () => {}}) => {
       action();
       console.log("Secondary button pressed");
     }}>
-      <Text>{title ? title : defaultTitle}</Text>
+      <Native.StyledParagraph>{title ? title : defaultTitle}</Native.StyledParagraph>
     </StyledSecondaryButton>
   );
 };

@@ -1,6 +1,5 @@
 import styled from "styled-components/native";
-import { Text } from "react-native";
-
+import { Native } from "../../nanites";
 const StyledPrimaryButton = styled.Pressable`
   background-color: #c7b198;
   padding-vertical: 10px;
@@ -13,7 +12,7 @@ const Primary = (props) => {
 
   return (
     <StyledPrimaryButton>
-      <Text> {props?.title ? props?.title : defaultTitle}</Text>
+      <Native.StyledParagraph> {props?.title ? props?.title : defaultTitle}</Native.StyledParagraph>
     </StyledPrimaryButton>
   );
 };
