@@ -1,6 +1,6 @@
 import { Buttons } from "./components/atoms";
 import styled from 'styled-components/native';
-import { Icon, Text } from './components/atoms';
+import { Icon, Text, Image } from './components/atoms';
 
 
 const StyledContainer = styled.View`
@@ -25,6 +25,9 @@ export default function App() {
       <Text.Paragraph paragraph="Paragraphe" />
       <Icon.Base name="home" iconType="material"/>
       <Icon.Base name="user" iconType="antdesign"/>
+      <Image.Base source={{
+         uri: 'https://reactnative.dev/img/tiny_logo.png',
+        }} />
     </StyledContainer>
   );
 }
