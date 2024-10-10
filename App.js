@@ -1,7 +1,6 @@
-import { Buttons } from "./components/atoms";
 import styled from 'styled-components/native';
 import { Icon, Text, Image, SwapImage } from './components/atoms';
-
+import { Buttons, Icon, Image, Text, Input, SwapImage } from './components/atoms';
 
 const StyledContainer = styled.View`
   background-color: white;
@@ -30,6 +29,7 @@ export default function App() {
         }} />
       <SwapImage.Base></SwapImage.Base>
       <SwapImage.Base selected></SwapImage.Base>
+      <Input.InputText placeholder="Enter your name" backgroundColor="red"/>
     </StyledContainer>
   );
 }
