@@ -1,6 +1,7 @@
 import { Buttons } from "./components/atoms";
 import styled from 'styled-components/native';
 import { Icon, Text, Image } from './components/atoms';
+import SwapImage from "./components/atoms/SwapImage";
 
 
 const StyledContainer = styled.View`
@@ -28,6 +29,8 @@ export default function App() {
       <Image.Base source={{
          uri: 'https://reactnative.dev/img/tiny_logo.png',
         }} />
+      <SwapImage.Base></SwapImage.Base>
+      <SwapImage.Base selected></SwapImage.Base>
     </StyledContainer>
   );
 }
