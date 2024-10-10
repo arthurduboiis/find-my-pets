@@ -1,15 +1,8 @@
 import React from "react";
-import { styled } from "styled-components/native";
-
-const StyledTitle = styled.Text`
-    background-color: ${(props) => props.backgroundColor ?? "transparent"};
-    font-size: ${(props) => props.fontSize ?? "24px"};
-    text-align: ${(props) => props.textAlign ?? "center"};
-`;
-
+import { Native } from "../../nanites";
 const Title = (props) => {
     let defaultTitle = "Default Title";
-    return <StyledTitle>{props?.title ? props?.title : defaultTitle}</StyledTitle>;
+    return <Native.StyledTitle>{props?.title ? props?.title : defaultTitle}</Native.StyledTitle>;
 }
 
 export default Title;

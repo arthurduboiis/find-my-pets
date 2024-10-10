@@ -1,14 +1,9 @@
 import React from "react";
-import { styled } from "styled-components/native";
-
-const StyledSubTitle = styled.Text`
-    background-color: ${(props) => props.backgroundColor ?? "transparent"};
-    font-size: ${(props) => props.fontSize ?? "18px"};
-`;
+import { Native } from "../../nanites";
 
 const SubTitle = (props) => {
     let defaultSubTitle = "Default SubTitle";
-    return <StyledSubTitle>{props?.subTitle ? props?.subTitle : defaultSubTitle}</StyledSubTitle>;
+    return <Native.StyledSubTitle>{props?.subTitle ? props?.subTitle : defaultSubTitle}</Native.StyledSubTitle>;
 }
 
 export default SubTitle;
