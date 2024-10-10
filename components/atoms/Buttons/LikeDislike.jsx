@@ -1,10 +1,14 @@
 import { Native } from "../../nanites";
 
 
-function LikeDislike() {
+function LikeDislike({ action = () => {}, children }) {
   return (
-    <Native.LikeDislikeContainer>
-      </Native.LikeDislikeContainer>
+    <Native.StyledButton like onPress={() => {
+      action();
+      console.log("Like button pressed");
+    }}>
+      {children}
+      </Native.StyledButton>
   )
 }
 
