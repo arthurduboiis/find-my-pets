@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import { Icon, Text, Image, SwapImage } from './components/atoms';
 import { Buttons, Icon, Image, Text, Input, SwapImage } from './components/atoms';
 
 const StyledContainer = styled.View`
