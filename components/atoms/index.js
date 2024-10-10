@@ -1,3 +1,5 @@
 import * as Buttons from "./Buttons";
+import * as Text from './Text';
+import * as Icon from './Icon';
 
-export { Buttons };
+export { Text, Icon, Buttons };
