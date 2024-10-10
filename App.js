@@ -1,7 +1,6 @@
 import { Buttons } from "./components/atoms";
 import styled from 'styled-components/native';
-import { Icon, Text, Image } from './components/atoms';
-import SwapImage from "./components/atoms/SwapImage";
+import { Icon, Text, Image, SwapImage } from './components/atoms';
 
 
 const StyledContainer = styled.View`
