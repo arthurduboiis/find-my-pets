@@ -1,6 +1,5 @@
-import { Buttons } from "./components/atoms";
 import styled from 'styled-components/native';
-import { Icon, Text } from './components/atoms';
+import { Buttons, Icon, Text, Input } from './components/atoms';
 
 
 const StyledContainer = styled.View`
@@ -25,6 +24,7 @@ export default function App() {
       <Text.Paragraph paragraph="Paragraphe" />
       <Icon.Base name="home" iconType="material"/>
       <Icon.Base name="user" iconType="antdesign"/>
+      <Input.InputText placeholder="Enter your name" backgroundColor="red"/>
     </StyledContainer>
   );
 }
