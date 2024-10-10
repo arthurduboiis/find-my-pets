@@ -4,6 +4,7 @@ import StyledParagraph from "./StyledParagraph";
 import StyledInputText from "./StyledInputText";
 import StyledImageBase from "./StyledImageBase";
 import StyledIconBase from "./StyledIconBase";
+import StyleSwapImageBase from "./StyleSwapImageBase";
 import StyledButton from "./StyledButton";
 import ToggleContainer from "./StyledToggleButton";
 
@@ -13,5 +14,6 @@ export {
   StyledParagraph, StyledImageBase, StyledIconBase ,
   StyledButton,
   ToggleContainer,
-  StyledInputText
+  StyledInputText,
+  StyleSwapImageBase
 };
