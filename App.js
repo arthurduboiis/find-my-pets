@@ -1,6 +1,5 @@
 import styled from 'styled-components/native';
-import { Buttons, Icon, Text, Input } from './components/atoms';
-
+import { Buttons, Icon, Image, Text, Input } from './components/atoms';
 
 const StyledContainer = styled.View`
   background-color: white;
@@ -24,6 +23,9 @@ export default function App() {
       <Text.Paragraph paragraph="Paragraphe" />
       <Icon.Base name="home" iconType="material"/>
       <Icon.Base name="user" iconType="antdesign"/>
+      <Image.Base source={{
+         uri: 'https://reactnative.dev/img/tiny_logo.png',
+        }} />
       <Input.InputText placeholder="Enter your name" backgroundColor="red"/>
     </StyledContainer>
   );
